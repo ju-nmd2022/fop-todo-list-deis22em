@@ -1,0 +1,62 @@
+body {
+  background-color: #bde0fe;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: -10%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.header {
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* #taskInput {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+} */
+
+#taskInput {
+  border-radius: 12px;
+  padding: 6px;
+  border-color: white;
+}
+
+#addTask {
+  /* display: block;
+  margin-left: 55%;
+  margin-right: auto;
+  margin-top: -1%; */
+  border-radius: 12px;
+  border: none;
+  padding: 5px 7px;
+  background-color: #ffaffc;
+  color: white;
+}
+
+#addTask:hover {
+  background-color: #f86ff4;
+  box-shadow: 1px 1px 5px #af32ab;
+}
+
+#rectangle {
+  width: 550px;
+  height: 600px;
+  border-radius: 12px;
+  background-color: #a99bd1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  background-image: linear-gradient(180deg, #a99bd1, #9387b6);
+  box-shadow: #b148ad 0px 0px 4px;
+}
