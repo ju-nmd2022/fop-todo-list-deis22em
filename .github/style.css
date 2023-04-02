@@ -28,7 +28,7 @@ body {
 #taskInput {
   border-radius: 12px;
   padding: 6px;
-  border-color: white;
+  border: none;
 }
 
 #addTask {
@@ -58,5 +58,19 @@ body {
   margin-right: auto;
   margin-top: 60px;
   background-image: linear-gradient(180deg, #a99bd1, #9387b6);
-  box-shadow: #b148ad 0px 0px 4px;
+}
+
+div.list-container {
+  text-align: center;
+  margin-top: -50vh;
+}
+
+ul.list {
+  display: inline-block;
+  text-align: left;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: #5a4a8a;
 }
