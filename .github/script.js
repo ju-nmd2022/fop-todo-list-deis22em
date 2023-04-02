@@ -12,17 +12,27 @@ function clickHandler() {
   }
 }
 
-function loadHandler() {
-  const button = document.getElementById("addTask");
-  button.addEventListener("click", clickHandler);
-}
-
+//the following lines of code was taken from https://www.w3schools.com/howto/howto_js_todolist.asp
 function newElement() {
   let li = document.createElement("li");
   let inputValue = document.getElementById("taskInput").value;
   let text = document.createTextNode(inputValue);
   li.appendChild(text);
   document.getElementById("myUL").appendChild(li);
+
+  li.addEventListener("click", function () {
+    li.style.textDecoration = "line-through";
+    li.style.color = "#5a4a8a";
+  });
+
+  li.addEventListener("dblclick", function () {
+    myUL.removeChild(li);
+  });
+}
+
+function loadHandler() {
+  const button = document.getElementById("addTask");
+  button.addEventListener("click", clickHandler);
 }
 
 window.addEventListener("load", loadHandler);

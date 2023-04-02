@@ -1,3 +1,7 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 body {
   background-color: #bde0fe;
 }
@@ -69,6 +73,7 @@ ul.list {
   display: inline-block;
   text-align: left;
   cursor: pointer;
+  color: white;
 }
 
 ul li:hover {
