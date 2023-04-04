@@ -3,6 +3,7 @@ function clickHandler() {
   console.log(inputElement.value);
   const value = inputElement.value;
 
+  //deletes sentence in input field and make sure you write something
   if (inputElement.value === "") {
     alert("You must write something");
     console.log("write something");
@@ -12,7 +13,7 @@ function clickHandler() {
   }
 }
 
-//the following lines of code was taken from https://www.w3schools.com/howto/howto_js_todolist.asp
+//the following lines of code was adapted from https://www.w3schools.com/howto/howto_js_todolist.asp
 function newElement() {
   let li = document.createElement("li");
   let inputValue = document.getElementById("taskInput").value;
@@ -20,6 +21,9 @@ function newElement() {
   li.appendChild(text);
   document.getElementById("myUL").appendChild(li);
 
+  localStorage.setItem("li", JSON.stringify(text));
+
+  //crosses a line in the text when pressed and deletes text when double clicked
   li.addEventListener("click", function () {
     li.style.textDecoration = "line-through";
     li.style.color = "#5a4a8a";
