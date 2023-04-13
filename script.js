@@ -14,7 +14,8 @@ function clickHandler() {
   }
 }
 
-//some of the following lines of code was adapted from https://www.w3schools.com/howto/howto_js_todolist.asp
+//some of the following lines of code was adapted from https://www.w3schools.com/howto/howto_js_todolist.asp, as well as ChatGPT
+
 function newElement() {
   let li = document.createElement("li");
   let inputValue = document.getElementById("taskInput").value;
